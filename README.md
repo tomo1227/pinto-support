@@ -1,2 +1,3 @@
 # pinto-support
+
 pintoのサポートページ

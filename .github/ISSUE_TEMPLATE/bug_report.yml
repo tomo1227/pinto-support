@@ -1,0 +1,56 @@
+name: 不具合報告
+description: Pinto で起きた不具合を報告する
+body:
+  - type: markdown
+    attributes:
+      value: |
+        投稿は公開されます。個人情報や非公開の写真は添付しないでください。
+  - type: textarea
+    id: steps
+    attributes:
+      label: 再現手順
+      description: どの画面で何をしたときに問題が起きたか、順番に書いてください。
+      placeholder: |
+        1. 課題一覧から課題を開く
+        2. 編集画面の共有ボタンを押す
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際に起きたこと
+      description: エラーメッセージが表示された場合は、その内容も書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待した動作
+    validations:
+      required: true
+  - type: input
+    id: app-version
+    attributes:
+      label: Pinto のバージョン
+      description: 分からない場合は「不明」と書いてください。
+      placeholder: "例: 1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: ios-version
+    attributes:
+      label: iOS のバージョン
+      description: 分からない場合は「不明」と書いてください。
+      placeholder: "例: iOS 26.1"
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: iPhone の機種（任意）
+      placeholder: "例: iPhone 16"
+  - type: textarea
+    id: additional
+    attributes:
+      label: 補足（任意）
+      description: 発生頻度や、個人情報・非公開の写真が含まれていないスクリーンショットなどがあれば添えてください。

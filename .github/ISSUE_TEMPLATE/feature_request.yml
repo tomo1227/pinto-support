@@ -1,0 +1,19 @@
+name: 機能の要望
+description: Pinto に追加してほしい機能や改善を提案する
+body:
+  - type: markdown
+    attributes:
+      value: |
+        投稿は公開されます。個人情報や非公開の写真は添付しないでください。
+  - type: textarea
+    id: goal
+    attributes:
+      label: やりたいこと・困っていること
+      description: どんな場面で、何ができると助かるかを書いてください。
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 希望する機能や改善（任意）
+      description: 操作や画面のイメージがあれば書いてください。具体的な案がなくても投稿できます。
