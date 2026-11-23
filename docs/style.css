@@ -176,7 +176,6 @@ p { margin-block: .7rem 0; }
 .faq summary::marker { color: var(--accent); }
 .faq details p { margin: 0 0 .85rem; }
 
-.policy { max-width: 49rem; }
 .policy h2:not(:first-child) { margin-top: 1.5rem; }
 
 @media (max-width: 37rem) {
